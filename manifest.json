@@ -1,0 +1,12 @@
+{
+  "manifest_version": 3,
+  "name": "南大选课冲突过滤器",
+  "version": "1.0",
+  "description": "在 xk.nju.edu.cn 自动隐藏与已选课程时间冲突的课程，辅助选课。",
+  "content_scripts": [
+    {
+      "matches": ["https://xk.nju.edu.cn/*"],
+      "js": ["parser.js", "content.js"]
+    }
+  ]
+}
